@@ -19,5 +19,16 @@
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>
+    <footer>
+        <copyright>
+            2024 Antoine Laurant, Arnaud Michel et Antoine Perrin - Tous droits réservés
+        </copyright>
+        <social type="blog" href="https://github.com/Earth-Wind-and-Fire/AP4B_Project/blob/main/LICENSE">
+            Licence
+        </social>
+        <link href="https://github.com/Earth-Wind-and-Fire/AP4B_Project">
+            Dépôt GitHub
+        </link>
+    </footer>
 
 </buildprofiles>
