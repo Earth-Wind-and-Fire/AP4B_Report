@@ -23,10 +23,4 @@ Pour réaliser ce projet, nous avons utilisé les technologies suivantes :
 
 ## Fonctionnalités du Jeu
 
-- **Mode de Jeu** : Le jeu peut être joué en compétition, en coopération ou en solo.
-- **Interaction avec la Machine** : Les joueurs doivent interagir avec un proto-ordinateur en utilisant des cartes perforées pour déduire le mot de passe.
-- **Adaptation UTBM** : Les énigmes sont adaptées pour que les élèves trouvent la salle d'examen en résolvant des problèmes logiques envoyés par le professeur.
-
-## Conclusion
-
-Ce projet est une adaptation numérique du jeu Turing Machine, offrant une expérience ludique et éducative aux étudiants de l'UTBM. Grâce à l'utilisation de Java, JavaFX et du modèle MVC, nous avons pu créer une application structurée et interactive, fidèle à l'esprit du jeu original tout en apportant une touche unique liée à l'univers de l'UTBM.
+[//]: # (TODO: Ajouter les fonctionnalités du jeu)

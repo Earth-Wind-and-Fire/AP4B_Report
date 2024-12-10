@@ -13,6 +13,8 @@
         <custom-css>
             custom.css
         </custom-css>
+        <header-logo>utbm.svg</header-logo>
+        <custom-favicons>utbm.svg</custom-favicons>
     </variables>
     <build-profile instance="r">
         <variables>

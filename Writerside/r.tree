@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="r"
-                 name="Report"
+                 name="Rapport AP4A"
                  start-page="presentation.md">
 
     <toc-element topic="presentation.md"/>
