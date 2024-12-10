@@ -8,11 +8,11 @@ Ce projet rend hommage à Alan Turing, un génie des mathématiques et du crypta
 
 ## Objectif du Projet
 
-L'objectif de ce projet est de créer une version numérique du jeu Turing Machine, en s'inspirant du monde de l'UTBM. 
-Dans cette adaptation, un professeur envoie un mail à ses élèves pour leur donner une énigme afin qu'ils puissent rentrer dans la salle d'examen grâce à un mot de passe.
+L'objectif de ce projet est de créer une version numérique du jeu Turing Machine, en s'inspirant du monde de l'**UTBM**. 
+Dans cette adaptation, un **professeur** envoie un mail à ses élèves pour leur donner une **énigme** afin qu'ils puissent rentrer dans la salle d'examen grâce à un **mot de passe**.
 Les étudiants doivent proposer des mots de passe et l'application leur indique si les mots de passe proposés valident les critères de l'énigme.
-Pour éviter toute triche et pour rendre le jeu plus stimulant, les mots de passes seront à usage unique et généré en fonction de l'INE de l'étudiant.
-De plus lors du lancement de l'application, une difficulté est choisie par l'étudiant, ce qui influe sur la complexité de l'énigme et pour favoriser la prise de risque, un multiplicateur de points (variant de 1 à 1.8) sera appliqué sur la note de l'examen en fonction de la difficulté choisie.
+Pour éviter toute triche et pour rendre le jeu plus **stimulant**, les mots de passes seront à usage unique et généré en fonction de l'INE de l'étudiant.
+De plus lors du lancement de l'application, une difficulté est choisie par l'étudiant, ce qui influe sur la **complexité** de l'énigme et pour favoriser la prise de risque, un **multiplicateur** de points (variant de 1 à 1.8) sera appliqué sur la note de l'examen en fonction de la difficulté choisie.
 
 ## Technologies Utilisées
 
