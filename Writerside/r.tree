@@ -4,7 +4,7 @@
 
 <instance-profile id="r"
                  name="Report"
-                 start-page="overview.md">
+                 start-page="presentation.md">
 
-    <toc-element topic="overview.md"/>
+    <toc-element topic="presentation.md"/>
 </instance-profile>
