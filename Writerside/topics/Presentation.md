@@ -1,6 +1,6 @@
 # Présentation
 
-Projet Turing Machine
+Projet Turing Machine - UTBM    
 
 ## Introduction
 
@@ -14,6 +14,8 @@ Les étudiants doivent proposer des mots de passe et l'application leur indique 
 Pour éviter toute triche et pour rendre le jeu plus **stimulant**, les mots de passes seront à usage unique et généré en fonction de l'INE de l'étudiant.
 De plus lors du lancement de l'application, une difficulté est choisie par l'étudiant, ce qui influe sur la **complexité** de l'énigme et pour favoriser la prise de risque, un **multiplicateur** de points (variant de 1 à 1.8) sera appliqué sur la note de l'examen en fonction de la difficulté choisie.
 
+Il est également possible de jouer à plusieurs, en **compétition** ou le **premier** qui trouve le mot de passe valide gagne.
+
 ## Technologies Utilisées
 
 Pour réaliser ce projet, nous avons utilisé les technologies suivantes :
@@ -23,4 +25,7 @@ Pour réaliser ce projet, nous avons utilisé les technologies suivantes :
 
 ## Fonctionnalités du Jeu
 
-[//]: # (TODO: Ajouter les fonctionnalités du jeu)
+- **Connexion** : l'étudiant doit se connecter avec son INE pour accéder à l'énigme.
+- **Choix de la difficulté** : l'étudiant peut choisir la difficulté de l'énigme.
+- **Génération de mot de passe** : l'application génère un mot de passe unique en fonction de l'INE de l'étudiant.
+- **Validation du mot de passe** : l'application valide le mot de passe proposé par l'étudiant.

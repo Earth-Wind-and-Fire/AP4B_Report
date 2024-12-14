@@ -4,11 +4,13 @@
 
 <instance-profile id="r"
                  name="Rapport AP4A"
-                 start-page="presentation.md">
+                 start-page="Presentation.md">
 
-    <toc-element topic="presentation.md"/>
+    <toc-element topic="Presentation.md"/>
     <toc-element topic="Choix-de-conceptions.md"/>
     <toc-element topic="Diagramme-de-Classe.md"/>
     <toc-element topic="Diagrammes-Use-Case.md"/>
-    <toc-element topic="Diagrammes-de-Séquence.md"/>
+    <toc-element topic="Diagrammes-de-Sequence.md">
+        <toc-element topic="Initialisation-de-la-partie.md"/>
+    </toc-element>
 </instance-profile>
