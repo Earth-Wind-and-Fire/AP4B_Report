@@ -20,7 +20,7 @@ F = f_1 \circ f_2 \circ f_3 \circ f_4 \circ f_5 \circ f_6 : \Omega \rightarrow \
 \textbf{Résultat après chaque étape :} \\
 \Omega_k = f_k(\Omega_{k-1}) \quad \text{avec } \Omega_0 = \Omega \\
 \text{Si } |\Omega_k| = 1 \text{ (une seule combinaison restante), le processus s'arrête.} \\
-\text{Si } |\Omega_k| = 0 \text{ (aucune combinaison restante) ou } k = 6 \text{ (6 étapes atteintes), alors :} \\
+\text{Si } |\Omega_k| != 1 \text{ (il reste plusieurs combinaisons) ou } k = 6 \text{ (6 étapes atteintes), alors :} \\
 \text{Retour à l'étape précédente avec une nouvelle fonction de filtrage.}
 \end{array}
 $$
