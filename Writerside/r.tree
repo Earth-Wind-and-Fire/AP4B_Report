@@ -12,5 +12,7 @@
     <toc-element topic="Diagrammes-Use-Case.md"/>
     <toc-element topic="Diagrammes-de-Sequence.md">
         <toc-element topic="Initialisation-de-la-partie.md"/>
+        <toc-element topic="Description-de-la-manche.md"/>
     </toc-element>
+    <toc-element topic="Conclusion.md"/>
 </instance-profile>

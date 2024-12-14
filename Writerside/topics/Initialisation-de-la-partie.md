@@ -1,3 +1,2 @@
 # Initialisation de la partie
 
-Start typing here...
