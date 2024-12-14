@@ -14,7 +14,7 @@
             custom.css
         </custom-css>
         <header-logo>utbm.svg</header-logo>
-        <custom-favicons>utbm.svg</custom-favicons>
+        <custom-favicons>logo_utbm_seul.png</custom-favicons>
     </variables>
     <build-profile instance="r">
         <variables>
