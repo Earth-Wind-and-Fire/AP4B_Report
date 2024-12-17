@@ -8,7 +8,7 @@
     <secondary-label id="structurel" name="Structurel" color="blue">
         Diagramme Structurel
     </secondary-label>
-    <secondary-label id="comportemental" name="Comportemental" color="purple">
+    <secondary-label id="comportemental" name="Comportemental" color="tangerine">
         Diagramme Comportemental
     </secondary-label>
 </labels>
