@@ -1,5 +1,7 @@
 # Description de la manche
 
+<primary-label ref="diagram"/>
+
 ## Description
 
 La manche est une partie du jeu. Elle est composée de plusieurs éléments :
@@ -16,6 +18,8 @@ Un joueur propose la combinaison `123`. Pour un critère nombre de `1` le test r
 Enfin, le résultat de la manche est retourné au jeu.
 
 ## Diagramme de séquence
+
+<secondary-label ref="comportemental"/>
 
 ```plantuml
 @startuml

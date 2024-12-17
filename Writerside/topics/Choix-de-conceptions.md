@@ -38,3 +38,7 @@ $$
 Nous avons choisi d'utiliser **JavaFX** pour la conception de l'interface graphique de notre application.
 JavaFX est une technologie qui permet de créer des interfaces graphiques de manière simple et efficace.
 Par ailleurs, c'est une technologie qui est intégrée à Java, ce qui facilite son utilisation.
+
+> Nous avons fait le choix de JavaFX plutôt que Swing, car JavaFX est plus moderne et plus adapté pour la création d'interfaces graphiques.
+> De plus, JavaFX est plus performant que Swing et offre plus de possibilités en termes de design.
+{style="note"}
