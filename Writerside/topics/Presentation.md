@@ -14,7 +14,7 @@ Les étudiants doivent proposer des mots de passe et l'application leur indique 
 Pour éviter toute triche et pour rendre le jeu plus **stimulant**, les mots de passes seront à usage unique et généré en fonction de l'INE de l'étudiant.
 De plus lors du lancement de l'application, une difficulté est choisie par l'étudiant, ce qui influe sur la **complexité** de l'énigme et pour favoriser la prise de risque, un **multiplicateur** de points (variant de 1 à 1.8) sera appliqué sur la note de l'examen en fonction de la difficulté choisie.
 
-Il est également possible de jouer à plusieurs, en **compétition** ou le **premier** qui trouve le mot de passe valide gagne. Dans ce cas l'INE n'est pas nécessaire.
+Il est également possible de jouer à plusieurs, en **compétition** ou le **premier** qui trouve le mot de passe gagne. Dans ce cas l'INE n'est pas nécessaire.
 
 ## Technologies Utilisées
 

@@ -14,9 +14,9 @@ Pour créer une solution unique en fonctions de différents critères, nous avon
 
 Mathématiquement, nous créons un tableau de **125** éléments, chaque élément étant une **combinaison possible**. Nous appliquons ensuite une série de fonctions récursivement  pour **filtrer** les combinaisons en fonction des critères choisis par l'utilisateur. Et nous continuons ce processus jusqu'à ce qu'il ne reste qu'**une** seule combinaison. Si au bout de 6 étapes, s'il reste plusieurs combinaisons, nous revenons à l'étape précédente et recommençons le processus (donc, de manière récursive). Ce processus est développé dans un diagramme de séquence disponible **[ici](Initialisation-de-la-partie.md)**.
 
-### Modélisation mathématique du processus :
 $$
 \begin{array}{l}
+{\large \textbf{Modelisation mathematique du processus: }} \\
 \textbf{Initialisation :} \\
 \Omega = \{ (x_1, x_2, x_3) \mid x_i \in \{1, 2, 3, 4, 5\} \text{ pour } i = 1, 2, 3 \} \\
 \quad \text{(ensemble de toutes les combinaisons possibles, taille 125)} \\
