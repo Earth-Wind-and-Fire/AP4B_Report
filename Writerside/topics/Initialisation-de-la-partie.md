@@ -13,7 +13,7 @@ Il met en évidence le rôle de notre algorithmie de génération de stratégies
 @startuml
 'https://plantuml.com/sequence-diagram
 
-scale 0.625
+scale 0.8
 
 autonumber
 

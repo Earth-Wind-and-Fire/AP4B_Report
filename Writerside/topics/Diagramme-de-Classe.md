@@ -20,7 +20,7 @@ Voici quelques points clés à retenir :
 ```PlantUML
 @startuml
 
-scale 0.39
+scale 0.5
 title AP4B Turing Machine - Class Diagram
 
 

@@ -24,7 +24,6 @@ Enfin, le résultat de la manche est retourné au jeu.
 ```plantuml
 @startuml
 'https://plantuml.com/sequence-diagram
-scale 0.92
 
 title Manche
 autonumber

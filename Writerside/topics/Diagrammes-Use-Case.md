@@ -13,7 +13,7 @@ compréhension des fonctionnalités du système pour le client.
 
 ```PlantUML
 @startuml
-scale 0.6
+scale 0.78
 
 title Alan Turing Game
 
