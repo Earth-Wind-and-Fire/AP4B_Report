@@ -2,7 +2,7 @@
 
 Afin de réaliser notre application, nous avons dû faire des choix de conception. Ces choix ont été faits en fonction des besoins de l'application et des contraintes techniques.
 
-## Model view controller
+## Model View Controller
 
 Nous avons choisi d'utiliser le **modèle MVC** pour la conception de notre application. 
 En effet, cette architecture permet de séparer les différentes composantes de l'application, ce qui facilite la maintenance et l'évolution de l'application. 
@@ -12,7 +12,7 @@ De plus le modèle MVC permet de rendre l'application plus modulaire et donc plu
 
 Pour créer une solution unique en fonctions de différents critères, nous avons choisi de modéliser les différentes étapes de la création de la solution grâce à la **composition de fonctions**. 
 
-Mathématiquement, nous créons un tableau de **125** éléments, chaque élément étant une **combinaison possible**. Nous appliquons ensuite une série de fonctions pour **filtrer** les combinaisons en fonction des critères choisis par l'utilisateur. Et nous continuons ce processus jusqu'à ce qu'il ne reste qu'**une** seule combinaison. Si au bout de 6 étapes, s'il reste plusieurs combinaisons, nous revenons à l'étape précédente et recommence le processus (donc, de manière récursive). Ce processus est développé dans un diagramme de séquence disponible **[ici](Initialisation-de-la-partie.md)**.
+Mathématiquement, nous créons un tableau de **125** éléments, chaque élément étant une **combinaison possible**. Nous appliquons ensuite une série de fonctions récursivement  pour **filtrer** les combinaisons en fonction des critères choisis par l'utilisateur. Et nous continuons ce processus jusqu'à ce qu'il ne reste qu'**une** seule combinaison. Si au bout de 6 étapes, s'il reste plusieurs combinaisons, nous revenons à l'étape précédente et recommençons le processus (donc, de manière récursive). Ce processus est développé dans un diagramme de séquence disponible **[ici](Initialisation-de-la-partie.md)**.
 
 ### Modélisation mathématique du processus :
 $$
@@ -27,7 +27,7 @@ F = f_1 \circ f_2 \circ f_3 \circ f_4 \circ f_5 \circ f_6 : \Omega \rightarrow \
 \\
 \textbf{Résultat après chaque étape :} \\
 \Omega_k = f_k(\Omega_{k-1}) \quad \text{avec } \Omega_0 = \Omega \\
-\text{Si } |\Omega_k| = 1 \text{ (une seule combinaison restante), le processus s'arrête.} \\
+\text{Si } |\Omega_k| = 1 \text{ (une seule combinaison restante) et } 4 \leq k \leq 6 \text{, le processus s'arrête.} \\
 \text{Si } |\Omega_k| \not= 1 \text{ (il reste plusieurs combinaisons) ou } k = 6 \text{ (6 étapes atteintes), alors :} \\
 \text{Retour à l'étape précédente avec une nouvelle fonction de filtrage.}
 \end{array}
@@ -36,7 +36,7 @@ $$
 ## Utilisation de JavaFX
 
 Nous avons choisi d'utiliser **JavaFX** pour la conception de l'interface graphique de notre application.
-JavaFX est une technologie qui permet de créer des interfaces graphiques de manière simple et efficace.
+JavaFX est un framework qui permet de créer des interfaces graphiques de manière simple et efficace.
 Par ailleurs, c'est une technologie qui est intégrée à Java, ce qui facilite son utilisation.
 
 > Nous avons fait le choix de JavaFX plutôt que Swing, car JavaFX est plus moderne et plus adapté pour la création d'interfaces graphiques.

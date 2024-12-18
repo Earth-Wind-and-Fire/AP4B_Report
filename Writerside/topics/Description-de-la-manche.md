@@ -14,7 +14,7 @@ Puis, le résultat de la manche est retourné au jeu.
 
 ### Exemple
 
-Un joueur propose la combinaison `123`. Pour un critère nombre de `1` le test renvoie `validé` (true), pour le critère le nombre d'index `3` est le plus grand, le test renvoie `non validé` (false), et ainsi de suite pour le nombre de critères de la partie.
+Un joueur propose la combinaison `123`. Pour un critère nombre de `1` le test renvoie `validé` (true), pour le critère le 3ᵉ nombre est le plus grand, le test renvoie `non validé` (false), et ainsi de suite pour le nombre de critères de la partie.
 Enfin, le résultat de la manche est retourné au jeu.
 
 ## Diagramme de séquence
