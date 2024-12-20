@@ -29,3 +29,9 @@ Pour réaliser ce projet, nous avons utilisé les technologies suivantes :
 - **Choix de la difficulté** : l'étudiant peut choisir la difficulté de l'énigme.
 - **Génération de mot de passe** : l'application génère un mot de passe unique en fonction de l'INE de l'étudiant.
 - **Validation du mot de passe** : l'application valide le mot de passe proposé par l'étudiant.
+
+## Répartition des Tâches
+
+- **Arnaud Michel** : Conception de l'application, conception du diagramme de séquence sur l'initialisation de la partie et du diagramme de classe, rédaction du rapport.
+- **Antoine Laurant** : Conception de l'application, conception du diagramme de classe, conception du diagramme de séquence sur la gestion des manches, relecture du rapport.
+- **Antoine Perrin** : Conception de l'application, conception du diagramme `Use Case`, analyse et compréhension des règles du jeu pour l'adapter à l'UTBM, relecture du rapport.
