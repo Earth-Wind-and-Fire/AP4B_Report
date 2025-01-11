@@ -45,6 +45,10 @@ Pour la gestion des stratégies, nous avons supprimé la classe abstraite `Strat
 
 scale 0.244
 
+skinparam title {
+    fontSize 28
+}
+
 title AP4B Turing Machine - Class Diagram
 
 
