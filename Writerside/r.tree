@@ -15,5 +15,6 @@
         <toc-element topic="Description-de-la-manche.md"/>
     </toc-element>
     <toc-element topic="Implementation.md"/>
+    <toc-element topic="Utilisation.md"/>
     <toc-element topic="Conclusion.md"/>
 </instance-profile>

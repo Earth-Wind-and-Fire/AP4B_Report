@@ -6,7 +6,17 @@ Afin de réaliser notre application, nous avons dû faire des choix de conceptio
 
 Nous avons choisi d'utiliser le **modèle MVC** pour la conception de notre application. 
 En effet, cette architecture permet de séparer les différentes composantes de l'application, ce qui facilite la maintenance et l'évolution de l'application. 
-De plus le modèle MVC permet de rendre l'application plus modulaire et donc plus facile à comprendre et à maintenir. 
+De plus le modèle MVC permet de rendre l'application plus modulaire et donc plus facile à comprendre et à maintenir.
+
+## Evolution des choix de conception
+
+Depuis la première version de l'application, l'architecture n'a pas grandement évolué.
+
+
+Nous avons supprimé une classe que nous avions jugée inutile et nous avons ajouté quelques méthodes pour l'encapsulation des données.
+Nous avons aussi ajouter des Enumerations pour les différentes difficultés et les différents types de stratégies afin de rendre le code plus lisible et plus facile à maintenir.
+
+Nous détaillerons ces modifications dans la partie **[](Diagramme-de-Classe.md)**.
 
 ## Création d'une unique solution
 
@@ -42,3 +52,6 @@ Par ailleurs, c'est une technologie qui est intégrée à Java, ce qui facilite 
 > Nous avons fait le choix de JavaFX plutôt que Swing, car JavaFX est plus moderne et plus adapté pour la création d'interfaces graphiques.
 > De plus, JavaFX est plus performant que Swing et offre plus de possibilités en termes de design.
 {style="note"}
+
+
+Nous avons utilisé Maven pour gérer les dépendances de notre projet. Maven est un outil de gestion de projet qui permet de gérer les dépendances, de compiler le code, de générer des rapports, etc.
