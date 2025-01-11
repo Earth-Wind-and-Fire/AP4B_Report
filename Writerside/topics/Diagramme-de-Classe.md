@@ -43,7 +43,7 @@ Pour la gestion des stratégies, nous avons supprimé la classe abstraite `Strat
 ```PlantUML
 @startuml
 
-scale 0.244
+scale 0.3
 
 skinparam title {
     fontSize 28

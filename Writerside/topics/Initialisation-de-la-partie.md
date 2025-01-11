@@ -16,7 +16,7 @@ Cette partie n'a que peu évolué ormis certains ajouts de fonction afin de mieu
 ```plantuml
 @startuml
 'https://plantuml.com/sequence-diagram
-scale 0.625
+scale 0.85
 autonumber
 
 ' Paritipant
