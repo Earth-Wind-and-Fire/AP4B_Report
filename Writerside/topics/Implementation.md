@@ -25,3 +25,8 @@ Nous avons donc pu mettre en place les rounds alors même que l'algorithme de g�
 Nous avons rajouté des **fonctionnalités** au jeu, comme la possibilité de choisir la **difficulté** de l'énigme, de **valider** le mot de passe proposé par l'étudiant, etc.
 
 Nous avons également ajouté la possibilité de jouer à **plusieurs** en **compétition**.
+
+
+## Tests unitaires
+
+Nous avons mis en place un **test unitaire** pour générer des combinaisons et vérifier que l'algorithme fonctionne correctement (vérification de l'amplitude des combinaisons, de la génération de combinaisons uniques, etc.).

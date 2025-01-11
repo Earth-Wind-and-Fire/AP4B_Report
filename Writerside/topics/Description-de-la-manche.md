@@ -31,62 +31,62 @@ Enfin, le résultat de la manche est retourné au jeu.
 @startuml
 'https://plantuml.com/sequence-diagram
 
-scale 0.92
-title Manche
+scale 0.8
 autonumber
 
 participant "Game" as Game
-participant "Round" as Round
+participant "RoundView" as RoundView
 participant "RoundController" as RoundController
 participant "Player" as Player
-participant "RoundView" as RoundView
+participant "Recap" as Recap
 
-' Create Game and Round
-activate Game
-create Round
-Game -> Round: Instantiate Round
-activate Round
-Round -> Game: Round
-deactivate Round
+loop for each Player until the secret combination will found
 
-create RoundController
-Game -> RoundController: Instantiate RoundController
-activate RoundController
+    ' Create Game and Round
+    activate Game
 
-create RoundView
-RoundController -> RoundView: Instantiate RoundView
-activate RoundView
-RoundView -> RoundController: View created
-deactivate RoundView
+' instantiate RoundView
+    create RoundView
+    Game -> RoundView: void play()
+    activate RoundView
 
-RoundController -> Player: Ask a combination
-activate Player
+' instantiate RoundController
+    create RoundController
+    RoundView -> RoundController: instantiate RoundController
+    activate RoundController
+    RoundController -> RoundView: Controller created
+    deactivate RoundController
 
-Player -> RoundController: Return a combination
-deactivate Player
-RoundController -> Round: Submit combination
-activate Round
-Round -> RoundController: update combination
-deactivate Round
+    RoundView -> RoundController : onValidate() : submit solution
+    activate RoundController
 
-RoundController -> RoundView: Update view with combination
-activate RoundView
-RoundView -> RoundController: View updated
-deactivate RoundView
+    RoundController -> RoundController : checkCombination()
+    note left
+        Here, we check the combination
+        set by the player and compare
+        with the specific criteria asked
+        for generate result
+    end note
+    RoundController -> Player : saveResult
+    activate Player
+    Player -> Recap : saveResult
+    activate Recap
+    Recap -> Player : result saved
+    deactivate Recap
+    Player -> RoundController : result saved
+    deactivate Player
+    RoundController -> RoundView : updateView
+    deactivate RoundController
 
-RoundController -> Round: Test combination
-activate Round
-Round -> RoundController: return result
-deactivate Round
+    RoundView -> RoundController : onValidate() : next round
+    destroy RoundView
 
-RoundController -> RoundView: Update view with result
-activate RoundView
-RoundView -> RoundController: View updated
-deactivate RoundView
+    activate RoundController
+    RoundController -> Game : next Round
+    destroy RoundController
+end
 
-RoundController -> Game: Return result of the round
-deactivate RoundController
-deactivate Game
+
 
 
 

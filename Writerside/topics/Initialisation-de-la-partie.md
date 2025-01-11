@@ -16,9 +16,7 @@ Cette partie n'a que peu évolué ormis certains ajouts de fonction afin de mieu
 ```plantuml
 @startuml
 'https://plantuml.com/sequence-diagram
-
 scale 0.625
-
 autonumber
 
 ' Paritipant
@@ -26,6 +24,7 @@ participant "TuringApplication" as Main
 participant "Game" as Game
 participant "FactoryStrategy" as Factory
 participant "Strategy" as Strategy
+
 
 'Create Game
 activate Main
@@ -37,69 +36,79 @@ activate Game
 Game -> Game : Initialise()
 activate Game #aqua
 
-'Creat Factory
-create Factory
-Game->Factory : Instantiate FactoryStrategy
-activate Factory
-Factory->Game : FactoryStrategy
-deactivate Factory
+loop while (SecretCombination is not find)
 
-'Fct GenerateStrategies
-Game->Game : GenerateStrategies() : Strategyable[*]
-activate Game #gold
-Game->Game : Generate Elem
-note left
-    Generate a list
-    of the 125
-    enable numbers
-end note
+    Game -> Game : generate Elem
+    note left
+        Generate a list
+        of the 125
+        enable numbers
+    end note
 
-'Strategy generation section
-loop while (len(Elem)!=1)
-    alt len(Elem>1)
-        Game->Factory : Generate n° Strategy
+    Game -> Game : genrate TypeStrat
+    note left
+            Generate a list
+            with all type of
+            strategy enable
+    end note
+
+    loop 4 times
+        create Factory
+        Game -> Factory : generateStrategy(random TypeStrat)
         activate Factory
 
-
-        'create Strategy
-        create Strategy
-
-        note right
-            FactoryStrategy determine witch strategy
-            instantiate with a specific algorithm
-        end note
-
-        Factory->Strategy : Instantiate specific Strategy
+        Factory -> Strategy : instantiate a specific strategy
         activate Strategy
-        Strategy->Factory : Strategy
+        Strategy -> Factory : return strategy
         deactivate Strategy
-        Factory->Game : Strategy
-        deactivate Factory
+        Factory -> Game : add strategy to the list (Game attribute)
+        destroy Factory
 
-        'test combination
-        Game->Strategy : TestCombinason(Elem)
+        Game -> Strategy : check remaining combinations (Elem)
         activate Strategy
-        Strategy->Game : return Elem validate
+        Strategy -> Game : remove combination (from Elem) who are not validate by the strategy
         deactivate Strategy
+    end
 
-        note right
-            Return all of the elements who
-            are validate by the strategy
-        end note
-
-    else len(Elem)=0 or nb Strategy == 6
-        Game->Game : delet last Strategy
-
-        note right
-            Remove the last strategy
-            from strategyable [*]
-        end note
+    alt Elem.size == 1
+        Game -> Game : set the last remaining combination as SecretCombination
     end
 end
 
+Game -> Game : fillRemainingStrategies()
+activate Game #gold
+
+loop while strategy.size != 5
+    create Factory
+    Game -> Factory : generateStrategy(random TypeStrat)
+    activate Factory
+
+    Factory -> Strategy : instantiate a specific strategy
+    activate Strategy
+    Strategy -> Factory : return strategy
+    deactivate Strategy
+    Factory -> Game : add strategy to the list (Game attribute)
+    destroy Factory
+
+
+    Game -> Strategy : check the SecretCombination
+    activate Strategy
+    Strategy -> Game : return
+    deactivate Strategy
+
+    alt if the SecretCombination is not validate by the strategy
+        Game -> Game : delete the strategy
+    end
+end
+
+Game -> Game : all Strategy & SecretCombination are find
 deactivate Game
 
+Game -> Game : game is set
 deactivate Game
+
+
+
 
 @enduml
 ```
