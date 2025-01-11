@@ -12,7 +12,7 @@ L'objectif de ce projet est de créer une version numérique du jeu Turing Machi
 Dans cette adaptation, un **professeur** envoie un mail à ses élèves pour leur donner une **énigme** afin qu'ils puissent rentrer dans la salle d'examen grâce à un **mot de passe**.
 Les étudiants doivent proposer des mots de passe et l'application leur indique si les mots de passe proposés valident les critères de l'énigme.
 Pour éviter toute triche et pour rendre le jeu plus **stimulant**, les mots de passes seront à usage unique et généré en fonction de l'INE de l'étudiant.
-De plus lors du lancement de l'application, une difficulté est choisie par l'étudiant, ce qui influe sur la **complexité** de l'énigme et pour favoriser la prise de risque, un **multiplicateur** de points (variant de 1 à 1.8) sera appliqué sur la note de l'examen en fonction de la difficulté choisie.
+De plus lors du lancement de l'application, une difficulté est choisie par l'étudiant, ce qui influe sur la **complexité** de l'énigme et pour favoriser la prise de risque, un **multiplicateur** de points (variant de 1.2 à 2) sera appliqué sur la note de l'examen en fonction de la difficulté choisie.
 
 Il est également possible de jouer à plusieurs, en **compétition** ou le **premier** qui trouve le mot de passe gagne. Dans ce cas l'INE n'est pas nécessaire.
 
@@ -32,6 +32,29 @@ Pour réaliser ce projet, nous avons utilisé les technologies suivantes :
 
 ## Répartition des Tâches
 
-- **Arnaud Michel** : Conception de l'application, conception du diagramme de séquence sur l'initialisation de la partie et du diagramme de classe, rédaction du rapport.
-- **Antoine Laurant** : Conception de l'application, conception du diagramme de classe, conception du diagramme de séquence sur la gestion des manches, relecture du rapport.
-- **Antoine Perrin** : Conception de l'application, conception du diagramme `Use Case`, analyse et compréhension des règles du jeu pour l'adapter à l'UTBM, relecture du rapport.
+### **Arnaud Michel** : 
+  - Conception `théorique` de l'application
+  - Conception du diagramme de `séquence` sur l'initialisation de la partie
+  - Conception du diagramme de `classe`
+  - Implémentation des `vues`, des `contrôleurs` et la base des `modèles`.
+  - Relecture et `optimisation` de la génération de combinaisons.
+  - Design de l'interface graphique.
+  - Rédaction du rapport.
+### **Antoine Laurant** : 
+  - Conception `théorique` de l'application
+  - Conception du diagramme de `classe` 
+  - Conception du diagramme de `séquence` sur la gestion des manches 
+  - Implémentation de l'**algorithme de génération de combinaisons**
+    - Usine de stratégies
+    - Test de solution
+    - Récupération de la solution unique
+  - View et Controller de la fenêtre de fin de partie
+  - Relecture du rapport.
+### **Antoine Perrin** : 
+  - Conception `théorique` de l'application
+  - Conception du diagramme `Use Case`
+  - Analyse et compréhension des règles du jeu pour l'adapter à l'UTBM
+  - Ajouts de stratégies
+  - Relecture complète du code et correction des bugs
+  - Écriture / montage vidéo de présentation
+  - Relecture du rapport.
