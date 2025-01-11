@@ -17,7 +17,7 @@ Cette partie n'a que peu évolué ormis certains ajouts de fonction afin de mieu
 @startuml
 'https://plantuml.com/sequence-diagram
 
-scale 0.8
+scale 0.625
 
 autonumber
 
